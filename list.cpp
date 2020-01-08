@@ -14,6 +14,10 @@ class LinkedList {
 
         LinkedList(uint64_t value) : _value{value}, _length{1}, next{nullptr} {};
 
+        ~LinkedList() {
+            delete next;
+        }
+
         auto length() const -> uint64_t { return _length; }
 
         auto getValue() const -> uint64_t { return _value; }
@@ -62,6 +66,7 @@ class LinkedList {
             _value = List._value;
             _length = List._length;
         }
+
 };
 
 
@@ -75,5 +80,7 @@ int main() {
     std::cout << ll->last()->getValue() << "\n";
     std::cout << ll->toString() << "\n";
     std::cout << ll->length() << "\n";
+    delete ll;
     return 0;
+
 }
