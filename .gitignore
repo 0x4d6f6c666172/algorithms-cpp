@@ -1,6 +1,7 @@
 .ccls*
 build/*
 compile_commands.json
+/subprojects/*/
 # Prerequisites
 *.d
 
