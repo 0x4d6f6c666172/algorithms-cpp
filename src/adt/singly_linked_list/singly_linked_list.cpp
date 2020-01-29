@@ -8,6 +8,13 @@
 
 int main() {
     auto sll = new SinglyLinkedList<int>();
+    sll->append(24);
+    sll->append(35);
     std::cout << "Works!" << "\n";
+    sll->toString();
+    std::cout << "\n";
+    std::cout << sll->value() << "\n";
+    std::cout << sll->getNext()->value() << "\n";
+    delete sll;
     return 0;
 }
