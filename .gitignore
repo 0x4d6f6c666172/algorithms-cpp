@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Build artifacts
+build/
+
+# Other
+.ccls
+.ccls-cache/
+subprojects/*
+compile_commands.json
