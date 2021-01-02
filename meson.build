@@ -13,4 +13,5 @@ algo = executable('algo', 'algo.cpp',
   include_directories: headers,
   install : true)
 
-test('basic', algo)
+subdir('tests')
+test('binary_tree_tests', binary_tree_tests)
