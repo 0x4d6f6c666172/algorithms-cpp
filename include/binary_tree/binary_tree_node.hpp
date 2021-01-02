@@ -8,10 +8,12 @@ struct BinaryTreeNode {
     BinaryTreeNode* rightNode;
 
     BinaryTreeNode() = delete;
+
     BinaryTreeNode(Value value) :
         value { value },
         leftNode { nullptr },
         rightNode { nullptr } {};
+
     ~BinaryTreeNode() {
         delete leftNode;
         delete rightNode;

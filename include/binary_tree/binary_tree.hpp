@@ -10,6 +10,7 @@ class BinaryTree {
 
     public:
         BinaryTree() : root { nullptr } {};
+
         BinaryTree(Value value) {
             root = new BinaryTreeNode<Value>(value);
         }
@@ -17,6 +18,7 @@ class BinaryTree {
         Value getRootValue() {
             return root->value;
         }
+
         ~BinaryTree() {
             delete root;
         }
